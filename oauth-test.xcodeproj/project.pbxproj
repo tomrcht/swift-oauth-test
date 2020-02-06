@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402171B9315F0F3C581578C5 /* Pods_oauth_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B0AE88E483034DCC9BC5E4 /* Pods_oauth_test.framework */; };
 		E212638523EC961500A0AAC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212638423EC961500A0AAC1 /* AppDelegate.swift */; };
 		E212638723EC961500A0AAC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212638623EC961500A0AAC1 /* SceneDelegate.swift */; };
 		E212638923EC961600A0AAC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212638823EC961600A0AAC1 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06B0AE88E483034DCC9BC5E4 /* Pods_oauth_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oauth_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7B2E7A6BF2FB19C0DB031 /* Pods-oauth-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oauth-test.debug.xcconfig"; path = "Target Support Files/Pods-oauth-test/Pods-oauth-test.debug.xcconfig"; sourceTree = "<group>"; };
+		8C556D52D4E686DE1F5D47A6 /* Pods-oauth-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oauth-test.release.xcconfig"; path = "Target Support Files/Pods-oauth-test/Pods-oauth-test.release.xcconfig"; sourceTree = "<group>"; };
 		E212638123EC961500A0AAC1 /* oauth-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oauth-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E212638423EC961500A0AAC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E212638623EC961500A0AAC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402171B9315F0F3C581578C5 /* Pods_oauth_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66A9D84BDE863A4C0E1DC5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06B0AE88E483034DCC9BC5E4 /* Pods_oauth_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B12F7ED77222428CCB89EC7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12C7B2E7A6BF2FB19C0DB031 /* Pods-oauth-test.debug.xcconfig */,
+				8C556D52D4E686DE1F5D47A6 /* Pods-oauth-test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E212637823EC961500A0AAC1 = {
 			isa = PBXGroup;
 			children = (
 				E212638323EC961500A0AAC1 /* oauth-test */,
 				E212638223EC961500A0AAC1 /* Products */,
+				B12F7ED77222428CCB89EC7A /* Pods */,
+				66A9D84BDE863A4C0E1DC5DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E212639523EC961700A0AAC1 /* Build configuration list for PBXNativeTarget "oauth-test" */;
 			buildPhases = (
+				EE2FEB05BEF0E9B9222F85F9 /* [CP] Check Pods Manifest.lock */,
 				E212637D23EC961500A0AAC1 /* Sources */,
 				E212637E23EC961500A0AAC1 /* Frameworks */,
 				E212637F23EC961500A0AAC1 /* Resources */,
+				68FDBA1F564CF9BB35859B02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68FDBA1F564CF9BB35859B02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oauth-test/Pods-oauth-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oauth-test/Pods-oauth-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oauth-test/Pods-oauth-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2FEB05BEF0E9B9222F85F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oauth-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E212637D23EC961500A0AAC1 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		E212639623EC961700A0AAC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C7B2E7A6BF2FB19C0DB031 /* Pods-oauth-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +368,7 @@
 		};
 		E212639723EC961700A0AAC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C556D52D4E686DE1F5D47A6 /* Pods-oauth-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
